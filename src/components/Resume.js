@@ -17,7 +17,7 @@ export const Resume = () => {
                             <h2>
                                 Resume
                             </h2>
-                            <iframe src={resume} width="100%" height="600px" title="Bryant's Resume"/>
+                            <iframe src={resume} width="70%" height="600px" title="Bryant's Resume"/>
                         </div>
                     </Col>
                 </Row>
