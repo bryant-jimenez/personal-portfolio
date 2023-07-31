@@ -10,7 +10,6 @@ export const Resume = () => {
       return (
         <section className="resume" id="resume">
             <img className="background-image-left" src={colorSharp} alt=""/>
-
             <Container>
                 <Row>
                     <Col>
@@ -18,7 +17,7 @@ export const Resume = () => {
                             <h2>
                                 Resume
                             </h2>
-                            <iframe src={resume} width={700} height={600} title="Bryant's Resume"/>
+                            <iframe src={resume} width="100%" height="600px" title="Bryant's Resume"/>
                         </div>
                     </Col>
                 </Row>
