@@ -61,7 +61,6 @@ export const Banner = () => {
                         design and analysis of algorithms, among others. These courses have equipped me with a strong
                         understanding of fundamental CS concepts and problem-solving techniques.
                     </p>
-                    <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt="Header Img"/>
