@@ -1,12 +1,38 @@
 import { Col, Container, Row, Nav, TabContainer, TabContent, TabPane } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import flairHome from "../assets/img/flair-home.png"
+import flairProduct from "../assets/img/flair-product.png"
+import flairCart from "../assets/img/flair-cart.png"
+import flairCheckout from "../assets/img/flair-checkout.png"
 import coolRef from "../assets/img/cool-ref.png";
 import ps1 from "../assets/img/PhotoShare1-142.png";
 import ps2 from "../assets/img/PhotoShare2-142.png";
 import ps3 from "../assets/img/PhotoShare3-142.png";
 import stsh from "../assets/img/stsh.png"
+import { First } from "react-bootstrap/esm/PageItem";
 
 export const Projects = () => {
+    const flair= [
+        {
+          title: "Flair: Ecommerce",
+          description: "TypeScript, Next.js, TailwindCSS, ReactJS",
+          details: "Developed fullstack ecommerce app where users can add items to cart, sort and search products by different criteria, view items through custom image gallery, manage cart, and checkout through Stripe.",
+          imgUrl: flairHome,
+        },
+        {
+            details: "Utilized Sanity Headless CMS for efficient item and inventory management. Inventory data described through schema queried using Sanity GROQ to sort products by price and date, as well as implemented full-text search.",
+            imgUrl: flairProduct,
+        },
+        {
+            details: "Constructed shopping cart where users can add, update, or remove items from their cart, with a responsive updating total which is automatically updated based on the users own currency format. Checking out makes POST request to Stripe API and routes to personalized checkout page.",
+            imgUrl: flairCart,
+        },
+        {
+            details: "Implemented server-side logic to integrate Stripe API, process payments, and handle async webhook events for order updates, ensuring a smooth user experience by providing real-time payment confirmation and order fulfillment.",
+            imgUrl: flairCheckout,
+        },
+      ];
+
     const coolCompiler= [
         {
           title: "COOL Compiler",
@@ -63,6 +89,27 @@ export const Projects = () => {
                     <Col>
                         <h2>Projects</h2>
                         <p>Personal Projects and Coursework</p>
+                        <h3> </h3>
+                        <TabContainer id="projects-tabs" defaultActiveKey="second">
+                            <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="second">Flair</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            <TabContent>
+                                <TabPane eventKey="second">
+                                    <Row className="proj-imgbx-featured" sm={5} md={4} lg={2}>
+                                        {
+                                            flair.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </TabPane>
+                            </TabContent>
+                        </TabContainer>
                         <TabContainer id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -75,50 +122,50 @@ export const Projects = () => {
                                 <   Nav.Link eventKey="third">Stanford Shell</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                        <TabContent>
-                            <TabPane eventKey="first">
-                                <Row>
-                                    {
-                                        coolCompiler.map((project, index) => {
-                                            return (
-                                                <ProjectCard
-                                                    key={index}
-                                                    {...project}
-                                                    />
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </TabPane>
-                            <TabPane eventKey="second">
-                                <Row>
-                                    {
-                                        photoShare.map((project, index) => {
-                                            return (
-                                                <ProjectCard
-                                                    key={index}
-                                                    {...project}
-                                                    />
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </TabPane>
-                            <TabPane eventKey="third">
-                                <Row>
-                                    {
-                                        stanfordShell.map((project, index) => {
-                                            return (
-                                                <ProjectCard
-                                                    key={index}
-                                                    {...project}
-                                                    />
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </TabPane>
-                        </TabContent>
+                            <TabContent>
+                                <TabPane eventKey="first">
+                                    <Row>
+                                        {
+                                            coolCompiler.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </TabPane>
+                                <TabPane eventKey="second">
+                                    <Row>
+                                        {
+                                            photoShare.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </TabPane>
+                                <TabPane eventKey="third">
+                                    <Row>
+                                        {
+                                            stanfordShell.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </TabPane>
+                            </TabContent>
                         </TabContainer>
                     </Col>
                 </Row>

@@ -3,6 +3,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import pythonLogo from "../assets/img/python-logo.png";
+import nextLogo from "../assets/img/nextjs-logo.png";
+import tailwindLogo from "../assets/img/tailwind-logo.png";
+import typescriptLogo from "../assets/img/typescript-logo.png";
 import cLogo from "../assets/img/c-logo.png"
 import cppLogo from "../assets/img/c++.png"
 import jsLogo from "../assets/img/JavaScript-logo.png";
@@ -54,6 +57,18 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={pythonLogo} alt=""/>
                                     <h4>Python</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={nextLogo} alt=""/>
+                                    <h4>Next.js</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={tailwindLogo} alt=""/>
+                                    <h4>TailwindCSS</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={typescriptLogo} alt=""/>
+                                    <h4>TypeScript</h4>
                                 </div>
                                 <div className="item">
                                     <img src={cLogo} alt=""/>

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import resume from "../assets/pdf/EngineeringResume_BryantJimenez.pdf"
+import resume from "../assets/pdf/Jimenez_Bryant_2024.pdf"
 import colorSharp from "../assets/img/color-sharp.png"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 

@@ -7,7 +7,7 @@ import contactImg from "../assets/img/grad-pic2.png"
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col>
