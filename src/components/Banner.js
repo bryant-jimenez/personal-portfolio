@@ -5,7 +5,7 @@ import headerImg from "../assets/img/grad-pic.png";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0); // dictates as to which index of which word currently displayed on banner
     const [isDeleting, setIsDeleting] = useState(false); // is word being typed or being deleted
-    const toRotate = [ "Software Engineer", "Web Developer", "First Generation"]; // words that are displayed and rotated through in banner
+    const toRotate = [ "Software Engineer", "Proudly First Generation"]; // words that are displayed and rotated through in banner
     const [text, setText] = useState(''); // component needs to know what portion of text is showing right now
     const period = 2000; // dictates time passed between each letter being typed out
     const [delta, setDelta] = useState(300); // determines how fast one letter comes after first one is typed

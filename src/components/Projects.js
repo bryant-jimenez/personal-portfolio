@@ -9,7 +9,6 @@ import ps1 from "../assets/img/PhotoShare1-142.png";
 import ps2 from "../assets/img/PhotoShare2-142.png";
 import ps3 from "../assets/img/PhotoShare3-142.png";
 import stsh from "../assets/img/stsh.png"
-import { First } from "react-bootstrap/esm/PageItem";
 
 export const Projects = () => {
     const flair= [
