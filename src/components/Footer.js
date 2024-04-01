@@ -30,7 +30,7 @@ export const Footer = () => {
             <div className='social-icon'>
               <a href="https://www.github.com/bryant-jimenez/"><img src={navIcon2} alt="" /></a>
             </div>
-            <p style={{"font-size": "10px"}}>Copyright 2023. Created by Bryant Jimenez.</p>
+            <p style={{"font-size": "10px"}}>Copyright 2024. Created by Bryant Jimenez.</p>
           </Col>
         </Row>
       </Container>

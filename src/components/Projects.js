@@ -1,9 +1,6 @@
 import { Col, Container, Row, Nav, TabContainer, TabContent, TabPane } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import flairHome from "../assets/img/flair-home.png"
-import flairProduct from "../assets/img/flair-product.png"
-import flairCart from "../assets/img/flair-cart.png"
-import flairCheckout from "../assets/img/flair-checkout.png"
+import prismaIcon from "../assets/img/prismaIcon.png"
 import coolRef from "../assets/img/cool-ref.png";
 import ps1 from "../assets/img/PhotoShare1-142.png";
 import ps2 from "../assets/img/PhotoShare2-142.png";
@@ -11,24 +8,23 @@ import ps3 from "../assets/img/PhotoShare3-142.png";
 import stsh from "../assets/img/stsh.png"
 
 export const Projects = () => {
-    const flair= [
+    const prisma= [
         {
-          title: "Flair: Ecommerce",
-          description: "TypeScript, Next.js, TailwindCSS, ReactJS",
-          details: "Developed fullstack ecommerce app where users can add items to cart, sort and search products by different criteria, view items through custom image gallery, manage cart, and checkout through Stripe.",
-          imgUrl: flairHome,
+          title: "PRISMA - Push Notifications",
+          description: "Swift, Python, Firebase",
+          imgUrl: prismaIcon,
         },
         {
-            details: "Utilized Sanity Headless CMS for efficient item and inventory management. Inventory data described through schema queried using Sanity GROQ to sort products by price and date, as well as implemented full-text search.",
-            imgUrl: flairProduct,
+            details: "Developed push notifications for LLM agent iOS application to promote physical behavior change, utilizing OpenAI API and Firebase Cloud Messaging, allowing users to set fixed and context-dependent notifications related to their health data.",
+            imgUrl: prismaIcon,
         },
         {
-            details: "Constructed shopping cart where users can add, update, or remove items from their cart, with a responsive updating total which is automatically updated based on the users own currency format. Checking out makes POST request to Stripe API and routes to personalized checkout page.",
-            imgUrl: flairCart,
+            details: "Engineered listener-based, server-side scheduling module in Python using APScheduler package for notification schedules based on changes to user database.",
+            imgUrl: prismaIcon,
         },
         {
-            details: "Implemented server-side logic to integrate Stripe API, process payments, and handle async webhook events for order updates, ensuring a smooth user experience by providing real-time payment confirmation and order fulfillment.",
-            imgUrl: flairCheckout,
+            details: "Implemented unit testing for Python backend server by employing Pytest, resulting in a significant reduction in post-deployment errors by 65%.",
+            imgUrl: prismaIcon,
         },
       ];
 
@@ -92,14 +88,14 @@ export const Projects = () => {
                         <TabContainer id="projects-tabs" defaultActiveKey="second">
                             <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
                                     <Nav.Item>
-                                        <Nav.Link eventKey="second">Flair</Nav.Link>
+                                        <Nav.Link eventKey="second">PRISMA</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             <TabContent>
                                 <TabPane eventKey="second">
                                     <Row className="proj-imgbx-featured" sm={5} md={4} lg={2}>
                                         {
-                                            flair.map((project, index) => {
+                                            prisma.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index} {...project} />
                                                 )

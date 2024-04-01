@@ -44,21 +44,26 @@ export const Banner = () => {
           <Container>
             <Row className="align-items-center">
                 <Col xs={12} md={6} xl={7}>
-                    <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{'Hello! My name is Bryant Jimenez: '}</h1>
+                    <span className="tagline">Welcome to my portfolio!</span>
+                    <h1>{'Hello! My name is Bryant Jimenez:'}</h1>
                     <h2><span className="wrap">{text}</span></h2>
                     <br></br>
                     <p className="bannerP">
-                        My name is Bryant Jimenez, 
-                        a senior studying Computer Science at Stanford University. 
-                        With a strong foundation in programming languages and relevant coursework, 
+                        I graduated March 2024 with a Bachelor of Science 
+                        in Computer Science at Stanford University. 
+                        With a strong foundation in elements across the entire stack, relevant coursework, and an unmatched passion for learning, 
                         I am excited to make a meaningful impact within the field as a First-Generation Low-Income student. 
                         <br></br>
                         <br></br>
-                        Throughout my academic journey, I have gained extensive knowledge in various areas, 
-                        including web applications, AI, computer and network security, systems, and 
-                        design and analysis of algorithms, among others. These courses have equipped me with a strong
-                        understanding of fundamental CS concepts and problem-solving techniques.
+                        Throughout my academic journey, I have gained extensive knowledge in various facets of building software, 
+                        including both web and mobile applications, AI, computer and network security, systems, and databases. 
+                        My experience has allowed me to flourish in contributing to open source projects alongside building some of 
+                        my own projects.
+                        <br></br>
+                        <br></br>
+                        On my own time, I enjoy exercise, visiting new places, and learning Japanese. I studied abroad in Kyoto, Japan for 
+                        an entire quarter during my senior year, which revolutionized my outlook on life and fanned the flame of my passion for learning languages
+                        and experiencing new cultures!
                     </p>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
