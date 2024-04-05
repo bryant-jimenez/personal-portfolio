@@ -14,6 +14,7 @@ import htmlLogo from "../assets/img/html-logo.png";
 import reactLogo from "../assets/img/react-logo.png";
 import unixLogo from "../assets/img/terminal-logo.png";
 import sqlLogo from "../assets/img/sql-logo.svg";
+import swiftLogo from "../assets/img/swiftLogo.svg"
 import goLogo from "../assets/img/go-logo.png";
 import bigqueryLogo from "../assets/img/bigquery-logo.png";
 import matlabLogo from "../assets/img/matlab-logo.png";
@@ -23,7 +24,6 @@ import darkspace from "../assets/img/darkspace.jpg"
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -59,28 +59,24 @@ export const Skills = () => {
                                     <h4>Python</h4>
                                 </div>
                                 <div className="item">
-                                    <img src={nextLogo} alt=""/>
-                                    <h4>Next.js</h4>
-                                </div>
-                                <div className="item">
-                                    <img src={tailwindLogo} alt=""/>
-                                    <h4>TailwindCSS</h4>
-                                </div>
-                                <div className="item">
-                                    <img src={typescriptLogo} alt=""/>
-                                    <h4>TypeScript</h4>
+                                    <img src={cppLogo} alt=""/>
+                                    <h4>C++</h4>
                                 </div>
                                 <div className="item">
                                     <img src={cLogo} alt=""/>
                                     <h4>C</h4>
                                 </div>
                                 <div className="item">
-                                    <img src={cppLogo} alt=""/>
-                                    <h4>C++</h4>
+                                    <img src={swiftLogo} alt=""/>
+                                    <h4>Swift</h4>
                                 </div>
                                 <div className="item">
                                     <img src={jsLogo} alt=""/>
                                     <h4>JavaScript</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={typescriptLogo} alt=""/>
+                                    <h4>TypeScript</h4>
                                 </div>
                                 <div className="item">
                                     <img src={cssLogo} alt=""/>
@@ -93,6 +89,14 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={reactLogo} alt=""/>
                                     <h4>React</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={nextLogo} alt=""/>
+                                    <h4>Next.js</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={tailwindLogo} alt=""/>
+                                    <h4>TailwindCSS</h4>
                                 </div>
                                 <div className="item">
                                     <img src={unixLogo} alt=""/>

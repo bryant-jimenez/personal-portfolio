@@ -12,11 +12,8 @@ export const Projects = () => {
         {
           title: "PRISMA - Push Notifications",
           description: "Swift, Python, Firebase",
+          details: "Developed push notifications for LLM agent iOS application to promote physical behavior change, utilizing OpenAI API and Firebase Cloud Messaging, allowing users to set fixed and context-dependent notifications related to their health data.",
           imgUrl: prismaIcon,
-        },
-        {
-            details: "Developed push notifications for LLM agent iOS application to promote physical behavior change, utilizing OpenAI API and Firebase Cloud Messaging, allowing users to set fixed and context-dependent notifications related to their health data.",
-            imgUrl: prismaIcon,
         },
         {
             details: "Engineered listener-based, server-side scheduling module in Python using APScheduler package for notification schedules based on changes to user database.",
@@ -24,6 +21,10 @@ export const Projects = () => {
         },
         {
             details: "Implemented unit testing for Python backend server by employing Pytest, resulting in a significant reduction in post-deployment errors by 65%.",
+            imgUrl: prismaIcon,
+        },
+        {
+            details: "Architected bulk data handling for open-source SpeziHealthKit module using Apple HealthKit API, implementing batch data retrieval and task parallelization for efficient processing, eliminating lost user health data during upload by 100%.",
             imgUrl: prismaIcon,
         },
       ];
