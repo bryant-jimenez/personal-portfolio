@@ -18,9 +18,8 @@ export const Footer = () => {
             <img src={contactImg} alt=""/>
             <br></br>
             <br></br>
-            <a style={{"color": "#ffffff"}} href="mailto:bryantjimenez@stanford.edu">bryantjimenez@stanford.edu</a>
+            <a style={{"color": "#ffffff"}} href="mailto:bryantjimenez@stanford.edu">bjimenez@alumni.stanford.edu</a>
             <br/>
-            <a style={{"color": "#ffffff"}} href="mailto:vbyjimenez@gmail.com">vbyjimenez@gmail.com</a>
           </Col>
           <Col className="text-center text-sm-end">
             <br/>
