@@ -59,6 +59,10 @@ export const Skills = () => {
                                     <h4>Python</h4>
                                 </div>
                                 <div className="item">
+                                    <img src={goLogo} alt=""/>
+                                    <h4>GoLang</h4>
+                                </div>
+                                <div className="item">
                                     <img src={cppLogo} alt=""/>
                                     <h4>C++</h4>
                                 </div>
@@ -107,16 +111,8 @@ export const Skills = () => {
                                     <h4>SQL</h4>
                                 </div>
                                 <div className="item">
-                                    <img src={goLogo} alt=""/>
-                                    <h4>GoLang</h4>
-                                </div>
-                                <div className="item">
                                     <img src={bigqueryLogo} alt=""/>
                                     <h4>Google BigQuery</h4>
-                                </div>
-                                <div className="item">
-                                    <img src={matlabLogo} alt=""/>
-                                    <h4>MATLAB</h4>
                                 </div>
                             </Carousel>
                         </div>
