@@ -294,15 +294,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: pulsate 1.5s infinite alternate;  
-  border: 0.2rem solid #fff;
+  border: 0.2rem solid #89c0ff;
   border-radius: 50%;
-  padding: 0.4em;
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  animation: slide-in 2.5s forwards;
-  -webkit-animation: slide-in 1.5s forwards;
-  box-shadow: 0 0 .2rem #fff,
-            0 0 .2rem #fff,
+  padding: 0.3em;
+  /* transform: translateX(-100%); */
+  /* -webkit-transform: translateX(-100%); */
+  /* animation: slide-in 2.5s forwards; */
+  /* -webkit-animation: slide-in 1.5s forwards; */
+  box-shadow: 0 0 .2rem #89c0ff,
+            0 0 .2rem #89c0ff,
             0 0 2rem #8ebbd7,
             0 0 0.8rem #4a9fff,
             0 0 2.8rem #4a9fff,
@@ -313,28 +313,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       100% {
 
         box-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
+        0 0 4px #89c0ff,
+        0 0 11px #89c0ff,
+        0 0 19px #89c0ff,
+        0 0 40px #4a9fff,
+        0 0 80px #4a9fff,
+        0 0 90px #4a9fff,
+        0 0 100px #4a9fff,
+        0 0 150px #4a9fff;
 
     }
 
     0% {
 
       box-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #bc13fe,
-      0 0 45px #bc13fe,
-      0 0 55px #bc13fe,
-      0 0 70px #bc13fe,
-      0 0 80px #bc13fe;
+      0 0 2px #89c0ff,
+      0 0 4px #89c0ff,
+      0 0 6px #89c0ff,
+      0 0 10px #4a9fff,
+      0 0 45px #4a9fff,
+      0 0 55px #4a9fff,
+      0 0 70px #4a9fff,
+      0 0 80px #4a9fff;
     }
 }
 
@@ -554,6 +554,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  min-height: fit-content;
 }
 .resume h2 {
   font-size: 45px;
