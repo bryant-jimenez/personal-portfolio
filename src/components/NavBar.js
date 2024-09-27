@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../assets/img/stanford-logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/github-mark-white.svg';
+import navIcon1 from '../assets/img/linkedin-112.svg';
+import navIcon2 from '../assets/img/github-mark.svg';
 
 
 
@@ -44,7 +44,7 @@ export const NavBar = () => {
                     <Nav.Link href="#aboutme" className={activeLink === 'aboutme' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About Me</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                     <Nav.Link href="#projects" className={activeLink === 'project' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
-                    <a href="/BryantJimenez_Resume.pdf" className="resume-link">Resume</a>
+                    <a href="/BryantJimenez_Resume.pdf" className="resume-link" style={{color: "#000000"}}>Resume</a>
                     <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact Me</Nav.Link>
                 </Nav>
                 <span className='navbar-text'>

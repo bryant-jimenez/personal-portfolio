@@ -92,14 +92,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #ffffff;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
+  font-weight: 500;
+  color: #000000 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -120,21 +120,21 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0);
+    background: rgba(0, 0, 0, 0);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: px solid rgba(0, 0, 0, 0.5);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -148,7 +148,7 @@ span.navbar-text {
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+	filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(100%) hue-rotate(346deg) brightness(100%) contrast(100%);
 }
 .navbar-text button {
   font-weight: 700;
@@ -234,7 +234,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 250px 0 100px 0;
-  background-image: url('./assets/img/darkspace.jpg');
+  /* background-image: url('./assets/img/darkspace.jpg'); */
+  background-color: white;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,7 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(84, 155, 231, 0.5) -5.91%, rgba(37, 105, 223, 0.861) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 0, 0.5) -5.91%, rgba(0, 0, 0, 0.861) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -251,16 +252,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner h1 {
   font-size: 65px;
-  font-weight: 700;
+  font-weight: 300px;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #000000;
 }
 
 .banner p {
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
+  font-weight: 700px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -293,48 +296,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: pulsate 1.5s infinite alternate;  
-  border: 0.2rem solid #89c0ff;
+  /* animation: pulsate 2s infinite alternate;   */
+  /* border: 0.2rem solid #000000; */
   border-radius: 50%;
-  padding: 0.3em;
+  /* padding: 0.3em; */
   /* transform: translateX(-100%); */
   /* -webkit-transform: translateX(-100%); */
   /* animation: slide-in 2.5s forwards; */
   /* -webkit-animation: slide-in 1.5s forwards; */
-  box-shadow: 0 0 .2rem #89c0ff,
-            0 0 .2rem #89c0ff,
-            0 0 2rem #8ebbd7,
-            0 0 0.8rem #4a9fff,
-            0 0 2.8rem #4a9fff,
-            inset 0 0 1.3rem #28b4ff; 
+  box-shadow: 0 0 .2rem #7a7b7b,
+            0 0 .2rem #6e6f70,
+            0 0 2rem #9e9e9e,
+            0 0 0.8rem #2d2d2d,
+            0 0 2.8rem #484849,
+            inset 0 0 1.3rem #555657; 
 
 }
 @keyframes pulsate {
       100% {
 
         box-shadow:
-        0 0 4px #89c0ff,
-        0 0 11px #89c0ff,
-        0 0 19px #89c0ff,
-        0 0 40px #4a9fff,
-        0 0 80px #4a9fff,
-        0 0 90px #4a9fff,
-        0 0 100px #4a9fff,
-        0 0 150px #4a9fff;
+        0 0 4px #262626,
+        0 0 11px #333334,
+        0 0 19px #737474,
+        0 0 40px #313132,
+        0 0 80px #3b3c3d,
+        0 0 90px #434344,
+        0 0 100px #323232,
+        0 0 150px #444445;
 
     }
 
     0% {
 
       box-shadow:
-      0 0 2px #89c0ff,
-      0 0 4px #89c0ff,
-      0 0 6px #89c0ff,
-      0 0 10px #4a9fff,
-      0 0 45px #4a9fff,
-      0 0 55px #4a9fff,
-      0 0 70px #4a9fff,
-      0 0 80px #4a9fff;
+      0 0 2px #e8e9ea,
+      0 0 4px #bdbebf,
+      0 0 6px #b8babb,
+      0 0 10px #c6c7c8,
+      0 0 45px #b7b7b7,
+      0 0 55px #8c8d8e,
+      0 0 70px #d0d1d2,
+      0 0 80px #a0a1a2;
     }
 }
 
@@ -346,20 +349,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  color: black;
 }
 .skill-bx {
-  background: #151515;
+  background:  white;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  box-shadow: 0 0 .2rem #7a7b7b,
+            0 0 .2rem #6e6f70,
+            0 0 2rem #9e9e9e,
+            0 0 0.8rem #2d2d2d,
+            0 0 2.8rem #484849,
+            inset 0 0 1.3rem #555657; 
 }
 .skill h2 {
   font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-  color: #B8B8B8;
+  color: #4d4c4c;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -391,7 +401,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: #151515;
+  background-color: #ffffff;
+  color: black;
 }
 .project h2 {
   font-size: 45px;
@@ -445,7 +456,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg,  rgb(94, 146, 201) -5.91%, rgb(8, 77, 195));
+    background: linear-gradient(90.21deg,  rgb(0, 0, 0) -5.91%, rgb(128, 129, 131));
     top: 0;
     left: 0;
     z-index: -1;
@@ -512,9 +523,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  color: white;
 }
 .proj-txtx span {
   font-style: italic;
+  color: white;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
@@ -588,77 +601,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .resume-link:hover {
   opacity: 1;
 }
-/************ Contact Css ************/
-/* .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
-}
-.contact img {
-  width: 92%;
-}
-.contact h2 {
-	font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
-  width: 100%;
-} */
 
 /************ Footer Css ************/
 .footer {
