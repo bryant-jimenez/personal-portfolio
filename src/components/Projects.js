@@ -88,10 +88,10 @@ export const Projects = () => {
                         <h3> </h3>
                         <TabContainer id="projects-tabs" defaultActiveKey="second">
                             <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="second">PRISMA</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="second">PRISMA</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
                             <TabContent>
                                 <TabPane eventKey="second">
                                     <Row className="proj-imgbx-featured" sm={5} md={4} lg={2}>
@@ -106,56 +106,59 @@ export const Projects = () => {
                                 </TabPane>
                             </TabContent>
                         </TabContainer>
-                        <TabContainer id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                        <TabContainer id="projects-tabs" defaultActiveKey="second">
+                            <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                <   Nav.Link eventKey="first">COOL Compiler</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">PhotoSharing Web App</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                <   Nav.Link eventKey="third">Stanford Shell</Nav.Link>
+                                    <Nav.Link eventKey="second">COOL Compiler</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <TabContent>
-                                <TabPane eventKey="first">
-                                    <Row>
+                                <TabPane eventKey="second">
+                                    <Row className="proj-imgbx-featured" sm={5} md={4} lg={3}>
                                         {
                                             coolCompiler.map((project, index) => {
                                                 return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
+                                                    <ProjectCard key={index} {...project} />
                                                 )
                                             })
                                         }
                                     </Row>
                                 </TabPane>
+                            </TabContent>
+                        </TabContainer>
+                        <TabContainer id="projects-tabs" defaultActiveKey="second">
+                            <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
+                                <Nav.Item>
+                                    <Nav.Link eventKey="second">PhotoSharing Web App</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                            <TabContent>
                                 <TabPane eventKey="second">
-                                    <Row>
+                                    <Row className="proj-imgbx-featured" sm={5} md={4} lg={3}>
                                         {
                                             photoShare.map((project, index) => {
                                                 return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
+                                                    <ProjectCard key={index} {...project} />
                                                 )
                                             })
                                         }
                                     </Row>
                                 </TabPane>
-                                <TabPane eventKey="third">
-                                    <Row>
+                            </TabContent>
+                        </TabContainer>
+                        <TabContainer id="projects-tabs" defaultActiveKey="second">
+                            <Nav variant="pills" className="nav-pills-featured mb-5 justify-content-center align-items-center" id="pills-tab">
+                                <Nav.Item>
+                                    <Nav.Link eventKey="second">Stanford Shell</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                            <TabContent>
+                                <TabPane eventKey="second">
+                                    <Row className="proj-imgbx-featured" sm={5} md={4} lg={3}>
                                         {
                                             stanfordShell.map((project, index) => {
                                                 return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
+                                                    <ProjectCard key={index} {...project} />
                                                 )
                                             })
                                         }

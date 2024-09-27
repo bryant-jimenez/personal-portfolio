@@ -445,7 +445,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg,  rgb(147, 199, 255) -5.91%, rgb(27, 95, 213));
+    background: linear-gradient(90.21deg,  rgb(94, 146, 201) -5.91%, rgb(8, 77, 195));
     top: 0;
     left: 0;
     z-index: -1;
@@ -455,7 +455,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 100% !important;
 }
 .project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 0px solid rgb(222, 12, 12);
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -534,6 +534,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: fit-content;
   height: auto;
 }
+
+@media screen and (max-width: 420px) {
+  .proj-txtx p {
+    font-size: 12px;
+  }
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -569,6 +576,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px 0 75px 0;
 }
 
+.resume-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  opacity: 1;
+}
 /************ Contact Css ************/
 /* .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
