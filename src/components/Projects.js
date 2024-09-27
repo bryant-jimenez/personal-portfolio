@@ -24,7 +24,7 @@ export const Projects = () => {
             imgUrl: prismaIcon,
         },
         {
-            details: "Architected bulk data handling for open-source SpeziHealthKit module using Apple HealthKit API, implementing batch data retrieval and task parallelization for efficient processing, eliminating lost user health data during upload by 100%.",
+            details: "Architected bulk data handling for open-source SpeziHealthKit module using Apple HealthKit API, implementing batch data retrieval and task parallelization for efficient processing, eliminating lost user health data during upload by 90% for 30+ users.",
             imgUrl: prismaIcon,
         },
       ];
@@ -37,7 +37,7 @@ export const Projects = () => {
           imgUrl: coolRef,
         },
         {
-            details: "Wrote parser for COOL language utilizing bison parser generator to output an abstract syntax tree (AST). Using AST, implemented semantic analyzer for COOL that manages naming and scoping, type checking, and full error message generation for erroneous programs. ",
+            details: "Wrote parser for COOL language utilizing bison parser generator to output an abstract syntax tree (AST). Using AST, implemented semantic analyzer for COOL that manages naming and scoping, type checking for 23+ types, 20+ smbols, classes, methods, and objects, and full error message generation for erroneous programs. ",
             imgUrl: coolRef,
             },
         {
