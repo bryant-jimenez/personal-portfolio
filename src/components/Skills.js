@@ -29,7 +29,7 @@ export const Skills = () => {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 5
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
@@ -53,18 +53,31 @@ export const Skills = () => {
                             <p>
                                 Programming Languages/Frameworks
                             </p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel responsive={responsive} 
+                                    infinite={true} 
+                                    className="skill-slider"
+                                    renderButtonGroupOutside={true}
+                                    keyBoardControl={true}
+                                    draggable={true}>
                                 <div className="item">
-                                    <img src={pythonLogo} alt=""/>
-                                    <h4>Python</h4>
+                                    <img src={jsLogo} alt=""/>
+                                    <h4>JavaScript</h4>
                                 </div>
                                 <div className="item">
                                     <img src={goLogo} alt=""/>
                                     <h4>GoLang</h4>
                                 </div>
                                 <div className="item">
+                                    <img src={pythonLogo} alt=""/>
+                                    <h4>Python</h4>
+                                </div>
+                                <div className="item">
                                     <img src={cppLogo} alt=""/>
                                     <h4>C++</h4>
+                                </div>
+                                <div className="item">
+                                    <img src={reactLogo} alt=""/>
+                                    <h4>React</h4>
                                 </div>
                                 <div className="item">
                                     <img src={cLogo} alt=""/>
@@ -73,10 +86,6 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={swiftLogo} alt=""/>
                                     <h4>Swift</h4>
-                                </div>
-                                <div className="item">
-                                    <img src={jsLogo} alt=""/>
-                                    <h4>JavaScript</h4>
                                 </div>
                                 <div className="item">
                                     <img src={typescriptLogo} alt=""/>
@@ -89,10 +98,6 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={htmlLogo} alt=""/>
                                     <h4>HTML</h4>
-                                </div>
-                                <div className="item">
-                                    <img src={reactLogo} alt=""/>
-                                    <h4>React</h4>
                                 </div>
                                 <div className="item">
                                     <img src={nextLogo} alt=""/>

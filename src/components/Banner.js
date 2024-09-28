@@ -5,8 +5,8 @@ import headerImg from "../assets/img/grad-pic.png";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0); // dictates as to which index of which word currently displayed on banner
     const [isDeleting, setIsDeleting] = useState(false); // is word being typed or being deleted
-    const toRotate = [ "Software Engineer", "Proudly First Generation"]; // words that are displayed and rotated through in banner
-    const [text, setText] = useState(''); // component needs to know what portion of text is showing right now
+    const toRotate = [ " Software Engineer", " Proudly First Generation"]; // words that are displayed and rotated through in banner
+    const [text, setText] = useState(' '); // component needs to know what portion of text is showing right now
     const period = 2000; // dictates time passed between each letter being typed out
     const [delta, setDelta] = useState(300); // determines how fast one letter comes after first one is typed
 
@@ -32,7 +32,7 @@ export const Banner = () => {
         if (!isDeleting && updatedText === fullText) { // if not deleting and updatedText = fullText, start deleting, reset Delta to normal pace
             setIsDeleting(true);
             setDelta(period);
-        } else if (isDeleting && updatedText === "") { // if text completely deleted, setdeleting to false, move idx to next word to display
+        } else if (isDeleting && updatedText === " ") { // if text completely deleted, setdeleting to false, move idx to next word to display
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setDelta(200);

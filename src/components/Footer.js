@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import stanfordLogo from "../assets/img/stanford-logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from '../assets/img/github-mark-white.svg';
+import navIcon1 from "../assets/img/linkedin-112.svg";
+import navIcon2 from '../assets/img/github-mark.svg';
 import contactImg from "../assets/img/grad-pic2.png"
 
 
@@ -18,7 +18,8 @@ export const Footer = () => {
             <img src={contactImg} alt=""/>
             <br></br>
             <br></br>
-            <a style={{"color": "#ffffff"}} href="mailto:bryantjimenez@stanford.edu">bjimenez@alumni.stanford.edu</a>
+            <a style={{color: "black"}}href="mailto:bryantjimenez@stanford.edu">bjimenez@alumni.stanford.edu</a>
+            <p style={{"font-size": "10px"}}>Copyright 2024. Created by Bryant Jimenez.</p>
             <br/>
           </Col>
           <Col className="text-center text-sm-end">
@@ -29,7 +30,6 @@ export const Footer = () => {
             <div className='social-icon'>
               <a href="https://www.github.com/bryant-jimenez/"><img src={navIcon2} alt="" /></a>
             </div>
-            <p style={{"font-size": "10px"}}>Copyright 2024. Created by Bryant Jimenez.</p>
           </Col>
         </Row>
       </Container>

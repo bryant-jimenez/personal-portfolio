@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #ffffff !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -352,17 +352,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: black;
 }
 .skill-bx {
-  background:  white;
-  border-radius: 64px;
+  /* background:  white; */
+  /* border-radius: 64px; */
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
-  box-shadow: 0 0 .2rem #7a7b7b,
-            0 0 .2rem #6e6f70,
-            0 0 2rem #9e9e9e,
-            0 0 0.8rem #2d2d2d,
-            0 0 2.8rem #484849,
-            inset 0 0 1.3rem #555657; 
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 10px 20px 20px #bebebe,
+             -10px -20px 20px #ffffff;
 }
 .skill h2 {
   font-size: 45px;
@@ -403,6 +401,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: #ffffff;
   color: black;
+}
+.projectContainer {
+  padding-bottom: 50px;
 }
 .project h2 {
   font-size: 45px;
@@ -589,8 +590,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .resume-link {
-  font-weight: 400;
-  color: #fff !important;
+  font-weight: 500;
+  color: #000000 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -604,11 +605,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 25px 0 50px 0;
-  background-image: url('./assets/img/darkspace.png');
+  margin: 50px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 46px;
+  background: linear-gradient(145deg, #ffffff, #efefef);
+  box-shadow:  29px 29px 51px #a6a6a6,
+             -29px -29px 51px #ffffff; 
+  color: #000000;
+  z-index: -1;
 }
 
 .footer img {
@@ -618,7 +624,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-weight: 400;
   font-size: 20px;
-  color: #ffffff;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
